@@ -191,7 +191,7 @@ e faça a indentação correta.
     a mensagem de erro será mostrada no console.
     */
     operationSignal = "$";
-    var cash = calculator(operationSignal);
+    var cash = calculator( operationSignal );
     if (cash) {
         number1 = 10;
         number2 = 11;
