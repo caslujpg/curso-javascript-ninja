@@ -73,11 +73,9 @@ falada, como se você estivesse falando em código xD
 */
 console.log( '\nSeu nome na língua do "P":' );
 var name = ['Lu', 'cas'];
-var pLenguage = name.map(function(item, index){
-    return 'P' + item;
-},).reduce(function(acumulado, atual){
-    return acumulado + atual;
-});
+var pLenguage = name.reduce(function(acumulado, atual){
+    return acumulado + "P" + atual;
+},'');
 console.log(pLenguage);
 
 /*
