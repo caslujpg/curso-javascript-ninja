@@ -20,7 +20,7 @@
     no console:
     */
     console.log('Adicionando seu nome no texto:');
-    console.log(text.replace(/Manuel Marques de Sousa/g,'Lucas Leonardo Nóbrega dos Santos'));
+    console.log(text.replace(/Manuel Marques de Sousa/g, 'Lucas Leonardo Nóbrega dos Santos'));
 
     /*
     Agora, substitua a palavra "brasileiro" por sua cidade natal e mostre no
@@ -56,7 +56,7 @@
     o método `toUpperCase()`. Mostre o resultado no console:
     */
     console.log('\n"O Centauro de Luvas" em caixa alta:');
-    console.log(text.replace(/'O Centauro de Luvas'/g, function(capturaTotal){
+    console.log(text.replace(/'O Centauro de Luvas'/g, function (capturaTotal) {
         return capturaTotal.toUpperCase();
     }));
 
@@ -73,7 +73,7 @@
     "O mês de [NOME DO MÊS] é representado pelo número [NÚMERO DO MÊS]."
     */
     console.log('\nMeses representados por números:');
-    var getMonthNumber = function getMonthNumber(monthName){
+    var getMonthNumber = function getMonthNumber(monthName) {
         var months = {
             janeiro: '01',
             fevereiro: '02',
@@ -114,7 +114,7 @@
     console o resultado.
     */
     console.log('\nReplace de datas:');
-    var replaceDate = function replaceDate(regex, day, month, year){
+    var replaceDate = function replaceDate(regex, day, month, year) {
         return day + '/' + getMonthNumber(month) + '/' + year;
     };
     console.log(text.replace(regexDate, replaceDate));
