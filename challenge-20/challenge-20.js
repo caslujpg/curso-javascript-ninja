@@ -6,7 +6,7 @@
     3. Passe por parâmetro para a IIFE os objetos window e document.
     4. Dessa vez não é necessário criar um HTML. Ele já existe, e vamos utilizar
     a marcação criada nele para fazer nosso desafio ;)
-    
+
     O HTML NÃO PODE ser alterado!
     */
 
@@ -68,11 +68,11 @@
         - "Preencha a mensagem!"
     - Se o campo de "Email" for inválido, mostrar:
         - "Entre com um e-mail válido!"
-    
+
     2. Para verificar se o e-mail é válido use a função `isValidEmail`, passando
     o e-mail que foi entrado no campo de "Email" por parâmetro. (A função
     `isValidEmail` será criada logo abaixo).
-    
+
     3. Se tudo estiver OK, pergunte ao usuário:
         - "Tem certeza que deseja enviar o formulário?"
     Se for confirmado, mostre um alerta com a mensagem:
@@ -83,7 +83,7 @@
     $button.addEventListener( 'click', function(event) {
         event.preventDefault();
 
-        if($inputUsername.value = 'Desconhecido')
+        if(!$inputUsername.value)
         return alert('Preencha o nome do usuário!');
 
         if(!$inputEmail.value)
@@ -94,7 +94,7 @@
 
         if(!isValidEmail($inputEmail.value))
         return alert('Entre com um e-mail válido!');
-        
+
         if (!confirm('Tem certeza que deseja enviar o formulário?'))
         return alert('Não enviado!');
 
@@ -116,13 +116,13 @@
         2 caracteres alfanuméricos;
         - O final do domínio é opcional, mas se existir, deve começar com um
         ponto, seguido de no máximo 2 caracteres alfanuméricos.
-    
+
     Alguns e-mails válidos que podem ser usados para testar:
         - "meu.email+categoria@gmail.com"
         - "juca_malandro@bol.com.br"
         - "pedrobala@hotmail.uy"
         - "sandro@culinaria.dahora"
-    
+
     Alguns e-mails inválidos:
         - "walter-da-silva@maraca.br"
         - "rita-marica@titica.a.b"
